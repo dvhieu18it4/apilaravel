@@ -27,7 +27,6 @@ class CreateUsersTable extends Migration
             ->references('id')->on('xe');
             $table->timestamps();
         });
-        Schema::drop('user');
     }
 
     /**
