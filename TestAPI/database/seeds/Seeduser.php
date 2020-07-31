@@ -16,7 +16,7 @@ class Seeduser extends Seeder
     {   
          $time = date('Y-m-d H:i:s');
    			User::create([
-   		    'id' =>'0',
+   		    'id' =>'2',
           'name' =>'admin',
           'phone' =>'9999999',
           'usertype'=>'admin',
