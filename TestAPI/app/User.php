@@ -12,7 +12,7 @@ class User extends Authenticatable
 {
     use Notifiable;
 
-    public $table = "users";
+    public $table = "user";
 
     use HasApiTokens, Notifiable;
 
