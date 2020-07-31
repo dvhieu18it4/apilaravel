@@ -13,7 +13,7 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('user', function (Blueprint $table) {
+        Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('xe_id')->nullable();
             $table->string('name');
@@ -35,7 +35,8 @@ class CreateUsersTable extends Migration
      * @return void
      */
     public function down()
-    {
-        Schema::dropIfExists('user');
+    {   
+        Schema::drop('user');
+        Schema::dropIfExists('users');
     }
 }
